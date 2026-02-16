@@ -11,6 +11,9 @@
     --color-nav: #070707ad;
     --color-border: #3131315e;
     --font-family-base: 'DM Sans', sans-serif;
+
+    --max-width: 1000px;
+    --padding-lateral: 1.5rem;
 }
 
 body {
@@ -19,6 +22,9 @@ body {
     color: var(--color-text);
     line-height: 1.6;
     margin: 0;
+
+    animation: fadeIn;
+    animation-duration: 2s;
 }
 
 header.nav {
@@ -36,12 +42,12 @@ header.nav {
 }
 
 .nav-wrap {
-    max-width: 900px;
+    max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0 var(--padding-lateral);
 }
 
 .loghetto p {
@@ -51,12 +57,11 @@ header.nav {
 }
 
 .home {
-    max-width: 90%;
     min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 2rem var(--padding-lateral) 1rem var(--padding-lateral);
     background: var(--color-bg);
 }
 
@@ -103,9 +108,9 @@ hr {
 }
 
 .lavori-section {
-    max-width: 90%;
+    max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0.5rem 0.5rem 2rem 0.5rem;
+    padding: 0.5rem var(--padding-lateral) 2rem var(--padding-lateral);
 }
 
 .subtitle {
@@ -143,9 +148,9 @@ hr {
 }
 
 .recensioni-section {
-    max-width: 90%;
+    max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0.5rem 0.5rem 5rem 0.5rem;
+    padding: 0.5rem var(--padding-lateral) 5rem var(--padding-lateral);
 }
 
 .recensioni-wrap h2 {
@@ -213,12 +218,12 @@ hr {
 
 .footer {
     background: var(--color-card);
-    padding: 1.5rem 0;
+    padding: 1.5rem var(--padding-lateral);
     border-top: 1px solid var(--color-border);
 }
 
 .footer-content {
-    max-width: 800px;
+    max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -267,7 +272,7 @@ hr {
     .footer-content {
         flex-direction: column;
         gap: 0.7rem;
-        padding: 0 0.5rem;
+        padding: 0 var(--padding-lateral);
     }
 
     .lavori-gallery {

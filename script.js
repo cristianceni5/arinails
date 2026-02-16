@@ -45,6 +45,7 @@ const recensioni = [
     }
 ];
 
+
 // Funzione per creare le stelle
 const creaStelle = (numero) => '★'.repeat(numero);
 
