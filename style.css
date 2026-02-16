@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
-    --color-primary: #ff85c2;
-    --color-secondary: #ff39a2;
+    --color-primary: hsl(330, 100%, 65%);
+    --color-secondary: #f12c96;
     --color-background: #0a0a0a;
     --color-surface: #1a1a1a;
     --color-text: #ffffff;
